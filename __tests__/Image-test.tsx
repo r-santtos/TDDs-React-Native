@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "@testing-library/react-native";
 import Image from "../src/components/Images";
 
-describe("Components", () => {
+describe("Components Images", () => {
   it("Should render RN Image", () => {
     const { getByTestId } = render(<Image />);
     const image = getByTestId("logo");
