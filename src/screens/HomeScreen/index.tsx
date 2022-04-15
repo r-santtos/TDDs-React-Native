@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import TextInputComponent from '../../components/TextInput';
+import TextInputComponent from '../../components/TextInputs';
 
 const App = () => {
   return (

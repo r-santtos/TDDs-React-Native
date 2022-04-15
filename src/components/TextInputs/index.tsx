@@ -32,12 +32,13 @@ const TextInputComponent = () => {
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}
     >
       <Text style={styles.txt}>TextInput</Text>
-      <TextInput 
+      <TextInput
+        testID="TextInput"
         style={styles.input}
         placeholder="Test TextInput"
         placeholderTextColor="#999"
         keyboardType="default"
-        autoCapitalize="none"
+        autoCapitalize="sentences"
         autoCorrect={true}
         value={value}
         onChangeText={(text) => setValue(text)}
@@ -70,6 +71,9 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     borderWidth: 1,
     borderColor: "#ddd",
+    alignItems: "flex-start",
+    justifyContent: "center",
+    backgroundColor: "#fff",
   },
   btn: {
     width: "100%",
