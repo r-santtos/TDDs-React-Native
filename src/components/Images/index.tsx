@@ -9,6 +9,8 @@ const ComponentImage = () => {
       source={{
         uri: 'https://reactnative.dev/img/tiny_logo.png',
       }}
+      resizeMode='contain'
+      accessibilityLabel='logo'
     />
   );
 }
