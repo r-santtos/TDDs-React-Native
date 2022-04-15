@@ -37,7 +37,7 @@
   }
 ```
 ******
-### Testando ao App.tsx
+### Testando o App.tsx
 - Primeiro vamos criar uma pasta "\__tests__" na raíz do projeto
 - Depois vamos criar um arquivo chamado "App-test.tsx"
 ```bash
