@@ -1,0 +1,16 @@
+import React from "react";
+import { render } from "@testing-library/react-native";
+import TextInputs from "../src/components/Inputs";
+
+describe("Components TextInputs", () => {
+  it("Render RN component TextInputs", () => {
+    const { getAllByTestId } = render(<TextInputs />);
+    const TextInput = getAllByTestId("TextInput");
+
+    expect(TextInput).toBeTruthy();
+    expect(TextInput.length).toBe(2);
+
+    expect(TextInput[0].props.placeholder).toBe("Email");
+    expect(TextInput[1].props.placeholder).toBe("Password");
+  });
+});
