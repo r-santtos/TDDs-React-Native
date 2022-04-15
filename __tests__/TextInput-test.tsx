@@ -40,5 +40,12 @@ describe("Components TextInput", () => {
     expect(TextInput.props.value).toBe("");
     expect(TextInput.props.onChangeText).toBeDefined();
     expect(TextInput.props.onChangeText).toBeInstanceOf(Function);
+
+    expect(TextInput.props.returnKeyType).toBeDefined();
+    expect(TextInput.props.returnKeyType).toBe("send");
+
+    expect(TextInput.props.onSubmitEditing).toBeDefined();
+    expect(TextInput.props.onSubmitEditing).toBeInstanceOf(Function);
+    
   });
 })

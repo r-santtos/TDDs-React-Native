@@ -42,6 +42,8 @@ const TextInputComponent = () => {
         autoCorrect={true}
         value={value}
         onChangeText={(text) => setValue(text)}
+        returnKeyType="send"
+        onSubmitEditing={() => console.log("Submit")}
       />
 
       <TouchableOpacity
