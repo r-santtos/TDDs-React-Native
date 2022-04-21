@@ -8,10 +8,6 @@
 ```bash
   yarn add jest-expo -D
 ```
-- @testing-library/jest-native
-```bash
-  yarn add @testing-library/jest-native -D
-```
 - @types/jest
 ```bash
   yarn add @types/jest -D
